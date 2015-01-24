@@ -729,6 +729,18 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 23141966, guid: b3811e8706fed1543955b31361b40014, type: 2}
+      propertyPath: m_ConnectedRigidBody
+      value: 
+      objectReference: {fileID: 993394025}
+    - target: {fileID: 23141966, guid: b3811e8706fed1543955b31361b40014, type: 2}
+      propertyPath: m_Anchor.y
+      value: -.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 23141966, guid: b3811e8706fed1543955b31361b40014, type: 2}
+      propertyPath: m_ConnectedAnchor.y
+      value: .5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b3811e8706fed1543955b31361b40014, type: 2}
   m_RootGameObject: {fileID: 152693985}
@@ -1799,9 +1811,9 @@ SpringJoint2D:
   m_GameObject: {fileID: 1909820064}
   m_Enabled: 1
   m_CollideConnected: 0
-  m_ConnectedRigidBody: {fileID: 1187542394}
-  m_Anchor: {x: .5, y: .5}
-  m_ConnectedAnchor: {x: 0, y: -.5}
+  m_ConnectedRigidBody: {fileID: 993394025}
+  m_Anchor: {x: .5, y: -.5}
+  m_ConnectedAnchor: {x: 0, y: .5}
   m_Distance: .100000001
   m_DampingRatio: 1
   m_Frequency: 5
