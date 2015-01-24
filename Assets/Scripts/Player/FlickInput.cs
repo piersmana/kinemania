@@ -5,12 +5,13 @@ using System.Collections;
 public class FlickInput : MonoBehaviour {
 
 	public int PlayerNumber; //Input source
-	public float FlickCooldown = .2f;
-	
-	private Rigidbody2D hand;
+	public float FlickCooldown = .5f;
+
+	public float _flickForce = 1f;
+	private Rigidbody2D _hand;
 
 	void Awake() {
-		hand = GetComponent<Rigidbody2D>();
+		_hand = GetComponent<Rigidbody2D>();
 	}
 
 	void Start () {
@@ -34,8 +35,17 @@ public class FlickInput : MonoBehaviour {
 			yield return null;
 		}
 		//Apply force to hand
-		hand.AddForce(new Vector2(5,5), ForceMode2D.Impulse);
-		
-		yield return new WaitForSeconds(FlickCooldown);
+		_hand.AddForce(new Vector2(5,5) * _flickForce, ForceMode2D.Impulse);
+		StopCoroutine("RechargeFlickPower");
+		StartCoroutine("RechargeFlickPower");
+	}
+
+	IEnumerator RechargeFlickPower() {
+		_flickForce = 0f;
+		while (_flickForce <= 1f) {
+			_flickForce += Time.deltaTime / FlickCooldown;
+			yield return null;
+		}
+		_flickForce = 1f;
 	}
 }
