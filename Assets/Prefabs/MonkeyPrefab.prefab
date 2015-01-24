@@ -422,7 +422,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 440694}
   m_Layer: 8
-  m_Name: Monkey
+  m_Name: MonkeyPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
