@@ -1,0 +1,80 @@
+fileFormatVersion: 2
+guid: 81417bbb4281f4e5d97022e300ef9653
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: tossables_0
+    21300002: tossables_1
+    21300004: tossables_2
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: tossables_0
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 2791
+        width: 827
+        height: 905
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tossables_1
+      rect:
+        serializedVersion: 2
+        x: 1331
+        y: 2724
+        width: 715
+        height: 1106
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tossables_2
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 1719
+        width: 615
+        height: 871
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 44, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
