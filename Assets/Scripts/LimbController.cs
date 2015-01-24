@@ -5,7 +5,7 @@ public class LimbController : MonoBehaviour {
 
 	public string horizontalInput;
 	public string verticalInput;
-	public float force = 1;
+	public float force = 10;
 
 	// Use this for initialization
 	void Start () {
@@ -27,7 +27,8 @@ public class LimbController : MonoBehaviour {
 			//Debug.Log("current angle: " + currentAngle);
 
 			float maxDelta= force * Time.deltaTime;
-			float dAngle = Mathf.Clamp(dAngle, dAngle - maxDelta, dAngle + maxDelta);
+			float dAngle = Mathf.DeltaAngle(currentAngle, angle); // Mathf.MoveTowardsAngle(currentAngle, angle, maxDelta);
+			dAngle = Mathf.Clamp(dAngle, dAngle - maxDelta, dAngle + maxDelta);
 			//Debug.Log("dAngle: " + dAngle + " maxDelta: " + maxDelta);
 			rigidbody2D.AddTorque(dAngle);
 
