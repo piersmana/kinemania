@@ -1,0 +1,113 @@
+fileFormatVersion: 2
+guid: bee2f1c1a27284af4827e5ae8140e32f
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: monkey_0
+    21300002: monkey_1
+    21300004: monkey_2
+    21300006: monkey_3
+    21300008: monkey_4
+    21300010: monkey_5
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: monkey_0
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 3072
+        width: 751
+        height: 967
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: monkey_1
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 3193
+        width: 909
+        height: 787
+      alignment: 9
+      pivot: {x: .467650682, y: .350543141}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: monkey_2
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 376
+        width: 576
+        height: 1629
+      alignment: 9
+      pivot: {x: .678680122, y: .951282918}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: monkey_3
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1663
+        width: 711
+        height: 1414
+      alignment: 9
+      pivot: {x: .231172666, y: .905522585}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: monkey_4
+      rect:
+        serializedVersion: 2
+        x: 1686
+        y: 1659
+        width: 557
+        height: 1418
+      alignment: 9
+      pivot: {x: .28882888, y: .89919436}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: monkey_5
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 74
+        width: 1104
+        height: 1545
+      alignment: 9
+      pivot: {x: .0732476041, y: .947659791}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
