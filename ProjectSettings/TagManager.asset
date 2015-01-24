@@ -45,3 +45,7 @@ TagManager:
     userID: 1
     uniqueID: 2625079513
     locked: 0
+  - name: doodads
+    userID: 2
+    uniqueID: 660448575
+    locked: 0
