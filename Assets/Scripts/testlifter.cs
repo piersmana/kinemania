@@ -28,8 +28,6 @@ public class testlifter : MonoBehaviour {
 		}
 
 		if (grabbed != null) {
-			Debug.Log("Not null");
-			Debug.Log( Vector2.up * lift_force );
 			grabbed.rigidbody2D.AddForce( Vector2.up * lift_force);
 		}
 	}
