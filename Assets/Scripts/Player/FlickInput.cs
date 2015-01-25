@@ -6,7 +6,7 @@ public class FlickInput : MonoBehaviour {
 
 	public string LimbName;
 	public float FlickCooldown = .5f;
-	public float ForceMagnitude = 10f;
+	public float ForceMagnitude = 600f;
 
 	private float _flickForce = 1f;
 	public Vector2 jointpos;
@@ -40,6 +40,8 @@ public class FlickInput : MonoBehaviour {
 			prevmagnitude = currmagnitude;
 			currstickpos = new Vector2(Input.GetAxis(_XAxis), Input.GetAxis(_YAxis));
 			currmagnitude = (currstickpos - laststickpos).magnitude;
+
+			/*
 			if (prevmagnitude > currmagnitude) {
 				
 				Vector2 impulse = ForceMagnitude * (currstickpos - laststickpos).normalized * _flickForce;
@@ -51,6 +53,29 @@ public class FlickInput : MonoBehaviour {
 				StopCoroutine("RechargeFlickPower");
 				StartCoroutine("RechargeFlickPower");
 			}
+			*/
+
+			// Test this out
+			Vector2 impulse = ForceMagnitude * currstickpos;
+			Vector2 handtobody = transform.position - _body.transform.position * ForceMagnitude;
+			
+			//Apply force to hand
+			_hand.AddForce(impulse);
+
+			Vector2 rotated_jointpos = Quaternion.Euler(0, 0, _body.transform.rotation.eulerAngles.z) * jointpos;
+			//_body.AddForceAtPosition(-impulse, (Vector2)_body.transform.position + rotated_jointpos);
+			_body.AddForce(-impulse);
+
+			//StopCoroutine("RechargeFlickPower");
+			//StartCoroutine("RechargeFlickPower");
+
+			_flickForce += 0.005F - currstickpos.magnitude*0.02F;
+
+
+			if (_flickForce > 1 ) { _flickForce = 1; }
+
+			// Okay
+
 			yield return null;
 		}
 	}

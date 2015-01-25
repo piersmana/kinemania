@@ -77,7 +77,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 409912}
   - 212: {fileID: 21200002}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: left_hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - 50: {fileID: 5009908}
   - 58: {fileID: 5809904}
   - 114: {fileID: 11409904}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -144,7 +144,8 @@ GameObject:
   - 58: {fileID: 5809906}
   - 114: {fileID: 11409906}
   - 114: {fileID: 11400000}
-  m_Layer: 8
+  - 58: {fileID: 5800000}
+  m_Layer: 11
   m_Name: Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -160,7 +161,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 409922}
   - 212: {fileID: 21200000}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: right_hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -313,7 +314,7 @@ GameObject:
   - 4: {fileID: 440682}
   - 33: {fileID: 3340678}
   - 23: {fileID: 2340678}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -331,7 +332,7 @@ GameObject:
   - 50: {fileID: 5040678}
   - 58: {fileID: 5840674}
   - 114: {fileID: 11440674}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -377,7 +378,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 440690}
   - 212: {fileID: 21200020}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: monkey_body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -398,7 +399,7 @@ GameObject:
   - 231: {fileID: 23140674}
   - 231: {fileID: 23141966}
   - 231: {fileID: 23141968}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -431,7 +432,7 @@ GameObject:
   - 50: {fileID: 5040682}
   - 58: {fileID: 5840676}
   - 114: {fileID: 11440676}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -448,7 +449,7 @@ GameObject:
   - 4: {fileID: 440698}
   - 33: {fileID: 3340682}
   - 23: {fileID: 2340682}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1120,10 +1121,10 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 140692}
-  m_Mass: 3
+  m_Mass: 5
   m_LinearDrag: .100000001
   m_AngularDrag: .0500000007
-  m_GravityScale: 1
+  m_GravityScale: 3
   m_FixedAngle: 0
   m_IsKinematic: 0
   m_Interpolate: 2
@@ -1174,6 +1175,17 @@ Rigidbody2D:
   m_Interpolate: 2
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!58 &5800000
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 109920}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Radius: 2.50999999
+  m_Center: {x: 0, y: 0}
 --- !u!58 &5809904
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -1329,6 +1341,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   grabbed: {fileID: 0}
+  grip_button: Right Hand Grip
 --- !u!114 &11409904
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1340,12 +1353,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 837ed11adf4145248a0e9670a07ef73d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerNumber: 1
+  LimbName: Left Hand
   FlickCooldown: .5
-  ForceMagnitude: 10
-  _flickForce: 1
-  direction: {x: 0, y: -1}
-  jointpos: {x: 0, y: 0}
+  ForceMagnitude: 80
+  jointpos: {x: -.5, y: -.5}
 --- !u!114 &11409906
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1357,12 +1368,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 837ed11adf4145248a0e9670a07ef73d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerNumber: 0
+  LimbName: Right Hand
   FlickCooldown: .5
-  ForceMagnitude: 10
-  _flickForce: 1
-  direction: {x: 0, y: -1}
-  jointpos: {x: 0, y: 0}
+  ForceMagnitude: 80
+  jointpos: {x: .5, y: -.5}
 --- !u!114 &11440674
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1374,12 +1383,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 837ed11adf4145248a0e9670a07ef73d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerNumber: 3
+  LimbName: Left Foot
   FlickCooldown: .5
-  ForceMagnitude: 10
-  _flickForce: 1
-  direction: {x: 0, y: -1}
-  jointpos: {x: 0, y: 0}
+  ForceMagnitude: 80
+  jointpos: {x: -.5, y: .5}
 --- !u!114 &11440676
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1391,12 +1398,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 837ed11adf4145248a0e9670a07ef73d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerNumber: 2
+  LimbName: Right Foot
   FlickCooldown: .5
-  ForceMagnitude: 10
-  _flickForce: 1
-  direction: {x: 0, y: -1}
-  jointpos: {x: 0, y: 0}
+  ForceMagnitude: 80
+  jointpos: {x: .5, y: .5}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
