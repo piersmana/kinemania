@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		stage_complete = false;
-		player = GameObject.Find("MonkeyPrefab");
+		player = GameObject.Find("player_monkey");
 	}
 	
 	// Update is called once per frame
