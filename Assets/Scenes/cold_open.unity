@@ -174,7 +174,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: .192156866, g: .301960796, b: .474509805, a: .0196078438}
+  m_BackGroundColor: {r: 1, g: 1, b: 1, a: .0196078438}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -185,7 +185,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 7
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -225,6 +225,7 @@ MonoBehaviour:
   the_menu: {fileID: 1934742124}
   menu_buttons:
   - {fileID: 1933735203}
+  first_level_name: 
 --- !u!1 &1933735202
 GameObject:
   m_ObjectHideFlags: 0
