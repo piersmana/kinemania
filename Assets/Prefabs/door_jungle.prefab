@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.31999993, y: -.810000002, z: -.0799999982}
-  m_LocalScale: {x: .100000001, y: .100000001, z: .100000001}
+  m_LocalScale: {x: .959999979, y: 1.00999999, z: .100000001}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -81,9 +81,9 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
+  m_SortingLayerID: 660448575
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300004, guid: 81417bbb4281f4e5d97022e300ef9653, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 22683974747244fb6856d15b24acec23, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!234 &23400000
 SliderJoint2D:
