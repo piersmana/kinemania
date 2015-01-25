@@ -100,6 +100,7 @@ GameObject:
   - 50: {fileID: 5000032}
   - 233: {fileID: 23300024}
   - 61: {fileID: 6100002}
+  - 231: {fileID: 23100008}
   m_Layer: 11
   m_Name: mokey_left_foot
   m_TagString: Untagged
@@ -159,6 +160,7 @@ GameObject:
   - 233: {fileID: 23300020}
   - 61: {fileID: 6100022}
   - 114: {fileID: 11400002}
+  - 231: {fileID: 23100006}
   m_Layer: 11
   m_Name: mokey_right_hand
   m_TagString: Untagged
@@ -700,7 +702,7 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100012}
-  m_Mass: 10
+  m_Mass: 12
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 1
@@ -880,7 +882,7 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100010}
-  m_Mass: 10
+  m_Mass: 12
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 1
@@ -1128,7 +1130,7 @@ MonoBehaviour:
   horizontalInput: Left Foot X
   verticalInput: Left Foot Y
   radius: 2
-  cooldownTime: 3
+  cooldownTime: .5
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1142,8 +1144,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   horizontalInput: Right Hand X
   verticalInput: Right Hand Y
-  radius: 5
-  cooldownTime: 3
+  radius: 3
+  cooldownTime: .5
 --- !u!114 &11400008
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1182,7 +1184,7 @@ MonoBehaviour:
   horizontalInput: Right Foot X
   verticalInput: Right Foot Y
   radius: 2
-  cooldownTime: 3
+  cooldownTime: .5
 --- !u!114 &11400014
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1196,8 +1198,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   horizontalInput: Left Hand X
   verticalInput: Left Hand Y
-  radius: 5
-  cooldownTime: 3
+  radius: 3
+  cooldownTime: .5
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -1570,6 +1572,34 @@ SpringJoint2D:
   m_Distance: .00499999989
   m_DampingRatio: 1
   m_Frequency: .5
+--- !u!231 &23100006
+SpringJoint2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100016}
+  m_Enabled: 1
+  m_CollideConnected: 0
+  m_ConnectedRigidBody: {fileID: 5000002}
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 0, y: 0}
+  m_Distance: .00499999989
+  m_DampingRatio: 1
+  m_Frequency: 1
+--- !u!231 &23100008
+SpringJoint2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100010}
+  m_Enabled: 1
+  m_CollideConnected: 0
+  m_ConnectedRigidBody: {fileID: 5000000}
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 0, y: 0}
+  m_Distance: .00499999989
+  m_DampingRatio: 1
+  m_Frequency: 1
 --- !u!232 &23200000
 DistanceJoint2D:
   m_ObjectHideFlags: 1
