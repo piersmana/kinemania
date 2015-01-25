@@ -51,9 +51,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47b60d45f716f4af58c0ef8eb775dfc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  win_shower_whiskey: {fileID: 0}
-  win_shower_banana: {fileID: 0}
+  win_shower_whiskey: {fileID: 400000, guid: e315589b59e0747cca8442064e4bced6, type: 2}
+  win_shower_banana: {fileID: 400000, guid: 326e3bce41bff41348235352c58f4758, type: 2}
   has_won: 0
+  timer_control: {fileID: 11400002, guid: 9646c8e0cd1eded48b37cad359e78346, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
