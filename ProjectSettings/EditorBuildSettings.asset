@@ -4,4 +4,16 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/cold_open.unity
+  - enabled: 1
+    path: Assets/Scenes/Level.unity
+  - enabled: 1
+    path: Assets/Scenes/level_test.unity
+  - enabled: 1
+    path: Assets/Scenes/monkey_proto.unity
+  - enabled: 1
+    path: Assets/Scenes/monkey_test.unity
+  - enabled: 1
+    path: Assets/Scenes/zaal_doodads.unity
