@@ -8,6 +8,12 @@ public class LockPosition : MonoBehaviour {
 
 	private Vector3 offset;
 
+	private SpringJoint2D stabilizingJoint;
+
+	void Awake() {
+		stabilizingJoint = monkeyInput.GetComponent<SpringJoint2D>();
+	}
+
 	// Use this for initialization
 	void Start () {
 		offset = transform.localPosition;
@@ -17,7 +23,7 @@ public class LockPosition : MonoBehaviour {
 	void Update () {
 	
 		// Disable floating when not grounded
-		monkeyInput.GetComponent<SpringJoint2D>().enabled = monkeyInput.IsGrounded();
+		stabilizingJoint.enabled = monkeyInput.IsGrounded();
 
 		transform.position = parent.transform.position + offset;
 	}

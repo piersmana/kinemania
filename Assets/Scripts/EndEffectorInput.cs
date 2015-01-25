@@ -15,8 +15,27 @@ public class EndEffectorInput : MonoBehaviour {
 
 	private handie mHandie;
 
+	// CRAZY SPRING PHYSICS HACKING
+	// attempting to stabilize forces tumbling through the air
+	private Rigidbody2D opposingSpring;
+
 	void Start() {
 		mHandie = transform.parent.GetComponent<handie>();
+
+		GameObject obj = new GameObject("OposingSpring");
+		opposingSpring = obj.AddComponent<Rigidbody2D>();
+		opposingSpring.mass = rigidbody2D.mass;
+		opposingSpring.isKinematic = true;
+		opposingSpring.fixedAngle = true;
+
+		opposingSpring.transform.parent = transform.parent;
+		opposingSpring.gameObject.SetActive(false);
+
+		SpringJoint2D counterSpring = mHandie.mainBody.gameObject.AddComponent<SpringJoint2D>();
+		counterSpring.connectedBody = opposingSpring;
+		counterSpring.dampingRatio = mHandie.GetComponent<SpringJoint2D>().dampingRatio;// / 2;
+		counterSpring.frequency = .01f;// mHandie.GetComponent<SpringJoint2D>().frequency / 10;
+		counterSpring.distance = mHandie.GetComponent<SpringJoint2D>().distance;
 	}
 
 	// Update is called once per frame
@@ -35,6 +54,11 @@ public class EndEffectorInput : MonoBehaviour {
 
 		if (mHandie.IsGrounded()) {
 			//horizontal = 0;
+		} else {
+			opposingSpring.gameObject.SetActive(true);
+
+			Vector3 dbody = mHandie.transform.position /* mHandie.mainBody.transform.position */ - transform.position;
+			opposingSpring.transform.position = mHandie.mainBody.transform.position + dbody;
 		}
 
 		Vector3 offset = new Vector3(horizontal, vertical, 0);
