@@ -1,0 +1,190 @@
+fileFormatVersion: 2
+guid: 513885206af8f4d4ab1aba749506e4c5
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: monkey_ok_0
+    21300002: monkey_ok_1
+    21300004: monkey_ok_2
+    21300006: monkey_ok_3
+    21300008: monkey_ok_4
+    21300010: monkey_ok_5
+    21300012: monkey_ok_6
+    21300014: monkey_ok_7
+    21300016: monkey_ok_8
+    21300018: monkey_ok_9
+    21300020: monkey_ok_10
+    21300022: monkey_ok_11
+    21300024: monkey_ok_12
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: monkey_ok_0
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 3005
+        width: 793
+        height: 971
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: monkey_ok_1
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 3052
+        width: 959
+        height: 900
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: monkey_ok_2
+      rect:
+        serializedVersion: 2
+        x: 2122
+        y: 3005
+        width: 378
+        height: 923
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: monkey_ok_3
+      rect:
+        serializedVersion: 2
+        x: 2820
+        y: 3041
+        width: 367
+        height: 887
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: monkey_ok_4
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 2106
+        width: 308
+        height: 899
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: monkey_ok_5
+      rect:
+        serializedVersion: 2
+        x: 1234
+        y: 2106
+        width: 391
+        height: 911
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: monkey_ok_6
+      rect:
+        serializedVersion: 2
+        x: 2145
+        y: 2094
+        width: 332
+        height: 591
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: monkey_ok_7
+      rect:
+        serializedVersion: 2
+        x: 2879
+        y: 2082
+        width: 320
+        height: 592
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: monkey_ok_8
+      rect:
+        serializedVersion: 2
+        x: 2642
+        y: 1438
+        width: 592
+        height: 438
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: monkey_ok_9
+      rect:
+        serializedVersion: 2
+        x: 1861
+        y: 1426
+        width: 616
+        height: 450
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: monkey_ok_10
+      rect:
+        serializedVersion: 2
+        x: 1222
+        y: 468
+        width: 616
+        height: 367
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: monkey_ok_11
+      rect:
+        serializedVersion: 2
+        x: 1199
+        y: 1083
+        width: 426
+        height: 888
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: monkey_ok_12
+      rect:
+        serializedVersion: 2
+        x: 2240
+        y: 124
+        width: 698
+        height: 1077
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

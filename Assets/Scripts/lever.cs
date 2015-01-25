@@ -4,6 +4,8 @@ using System.Collections;
 public class lever : powerSource {
 
 	public GameObject lever_base;
+	public int id;
+	static public int max_id;
 
 	// Use this for initialization
 	void Start () {
@@ -13,6 +15,14 @@ public class lever : powerSource {
 		else {
 			lever_base.GetComponent<SpriteRenderer>().sprite = lever_base.GetComponent<leverBase>().offState;
 		}
+		if (id > max_id) {
+			max_id = id;
+		}
+		if (id <= 0) {
+			id = max_id + 1;
+			max_id += 1;
+		}
+
 	}
 	
 	// Update is called once per frame

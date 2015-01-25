@@ -4,40 +4,55 @@ using System.Collections;
 [RequireComponent(typeof(Rigidbody2D))]
 public class FlickInput : MonoBehaviour {
 
-	public int PlayerNumber; //Input source
+	public string LimbName;
 	public float FlickCooldown = .5f;
+	public float ForceMagnitude = 10f;
 
-	public float _flickForce = 1f;
+	private float _flickForce = 1f;
+	public Vector2 jointpos;
+
+	private float prevmagnitude = 0;
+	private float currmagnitude = 0;
+	private Vector2 laststickpos = Vector2.zero;
+	private Vector2 currstickpos = Vector2.zero;
+
+	private string _XAxis;
+	private string _YAxis;
+
 	private Rigidbody2D _hand;
+	private Rigidbody2D _body;
 
 	void Awake() {
 		_hand = GetComponent<Rigidbody2D>();
+		_body = this.transform.parent.parent.FindChild("Body").GetComponent<Rigidbody2D>();
+
+		_XAxis = LimbName + " X";
+		_YAxis = LimbName + " Y";
 	}
 
 	void Start () {
-		StartCoroutine(DetectInput ());
+		StartCoroutine(DetectAcceleration());
 	}
 
-	IEnumerator DetectInput() {
+	IEnumerator DetectAcceleration() {
 		while (true) {
-			if (Input.GetKeyDown(KeyCode.Space)) {
-				yield return StartCoroutine(DetectInputEnd());
+			laststickpos = currstickpos;
+			prevmagnitude = currmagnitude;
+			currstickpos = new Vector2(Input.GetAxis(_XAxis), Input.GetAxis(_YAxis));
+			currmagnitude = (currstickpos - laststickpos).magnitude;
+			if (prevmagnitude > currmagnitude) {
+				
+				Vector2 impulse = ForceMagnitude * (currstickpos - laststickpos).normalized * _flickForce;
+				Vector2 handtobody = transform.position - _body.transform.position * ForceMagnitude * _flickForce;
+				
+				//Apply force to hand
+				_hand.AddForce(impulse, ForceMode2D.Impulse);
+				_body.AddForceAtPosition(-impulse, (Vector2)_body.transform.position + jointpos, ForceMode2D.Impulse);
+				StopCoroutine("RechargeFlickPower");
+				StartCoroutine("RechargeFlickPower");
 			}
 			yield return null;
 		}
-	}
-
-	IEnumerator DetectInputEnd() {
-		while (true) {
-			if (Input.GetKeyUp (KeyCode.Space)) {
-				break;
-			}
-			yield return null;
-		}
-		//Apply force to hand
-		_hand.AddForce(new Vector2(5,5) * _flickForce, ForceMode2D.Impulse);
-		StopCoroutine("RechargeFlickPower");
-		StartCoroutine("RechargeFlickPower");
 	}
 
 	IEnumerator RechargeFlickPower() {
