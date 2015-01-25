@@ -1766,7 +1766,6 @@ MonoBehaviour:
   m_Script: {fileID: 1301386320, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Priority: 3
   ignoreReversedGraphics: 1
   blockingObjects: 0
   m_BlockingMask:
@@ -3867,6 +3866,7 @@ MonoBehaviour:
   win_shower_banana: {fileID: 400000, guid: 326e3bce41bff41348235352c58f4758, type: 2}
   has_won: 0
   timer_control: {fileID: 705023529}
+  nextScene: 
 --- !u!61 &1826546069
 BoxCollider2D:
   m_ObjectHideFlags: 0

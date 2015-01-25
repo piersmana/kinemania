@@ -225,7 +225,7 @@ MonoBehaviour:
   the_menu: {fileID: 1934742124}
   menu_buttons:
   - {fileID: 1933735203}
-  first_level_name: 
+  first_level_name: level_1
 --- !u!1 &1933735202
 GameObject:
   m_ObjectHideFlags: 0
