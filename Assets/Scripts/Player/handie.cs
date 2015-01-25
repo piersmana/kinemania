@@ -3,6 +3,8 @@ using System.Collections;
 
 public class handie : MonoBehaviour {
 
+	public Rigidbody2D mainBody;
+
 	private Vector3 mousePosition;
 	public grabbable grabbed;
 	public string grip_button;
@@ -79,7 +81,7 @@ public class handie : MonoBehaviour {
 
 	public bool IsGrounded() {
 		int mask = 1 << LayerMask.NameToLayer("Ground");
-		float radius = Mathf.Max(collider2D.bounds.size.x, collider2D.bounds.size.y) * 2f;
+		float radius = Mathf.Max(collider2D.bounds.size.x, collider2D.bounds.size.y);
 		Collider2D colliders = Physics2D.OverlapCircle(transform.position, 
                radius, mask);
 		return colliders != null;

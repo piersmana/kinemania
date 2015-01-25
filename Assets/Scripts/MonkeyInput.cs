@@ -38,6 +38,19 @@ public class MonkeyInput : MonoBehaviour {
 		}
 	}
 
+	public bool IsGrounded() {
+		if (leftHand.IsGrounded())
+			return true;
+		if (rightHand.IsGrounded())
+			return true;
+		if (leftFoot.IsGrounded())
+			return true;
+		if (rightFoot.IsGrounded())
+			return true;
+
+		return false;
+	}
+
 	void Swap(ref string a, ref string b) {
 		string temp = a;
 		a = b;
