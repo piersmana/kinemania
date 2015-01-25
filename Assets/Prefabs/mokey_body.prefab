@@ -159,7 +159,6 @@ GameObject:
   - 233: {fileID: 23300020}
   - 61: {fileID: 6100022}
   - 114: {fileID: 11400002}
-  - 114: {fileID: 11400000}
   m_Layer: 11
   m_Name: mokey_right_hand
   m_TagString: Untagged
@@ -180,6 +179,7 @@ GameObject:
   - 233: {fileID: 23300026}
   - 61: {fileID: 6100016}
   - 231: {fileID: 23100002}
+  - 114: {fileID: 11400000}
   m_Layer: 11
   m_Name: mokey_left_hand
   m_TagString: Untagged
@@ -341,6 +341,40 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &100036
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400036}
+  - 114: {fileID: 11400012}
+  - 50: {fileID: 5000036}
+  m_Layer: 11
+  m_Name: end_effector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100038
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400038}
+  - 114: {fileID: 11400014}
+  - 50: {fileID: 5000038}
+  m_Layer: 11
+  m_Name: end_effector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!4 &400000
 Transform:
   m_ObjectHideFlags: 1
@@ -348,10 +382,10 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 4.48999929, y: .690004349, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 400012}
+  m_Father: {fileID: 400010}
   m_RootOrder: 0
 --- !u!4 &400002
 Transform:
@@ -363,7 +397,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 400018}
+  m_Father: {fileID: 400016}
   m_RootOrder: 0
 --- !u!4 &400004
 Transform:
@@ -411,7 +445,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .320000172, y: -5.21000099, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 400000}
   m_Father: {fileID: 400008}
   m_RootOrder: 0
 --- !u!4 &400012
@@ -424,7 +459,7 @@ Transform:
   m_LocalPosition: {x: -.440000057, y: -4.60000038, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 400000}
+  - {fileID: 400036}
   m_Father: {fileID: 400014}
   m_RootOrder: 0
 --- !u!4 &400014
@@ -449,7 +484,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -.390000343, y: -4.67000008, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 400002}
   m_Father: {fileID: 400020}
   m_RootOrder: 0
 --- !u!4 &400018
@@ -462,7 +498,7 @@ Transform:
   m_LocalPosition: {x: .539999962, y: -5.0199995, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 400002}
+  - {fileID: 400038}
   m_Father: {fileID: 400028}
   m_RootOrder: 0
 --- !u!4 &400020
@@ -562,7 +598,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100034}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.79999995, y: -16.2999992, z: 0}
+  m_LocalPosition: {x: -2.51179266, y: -17.2732334, z: 0}
   m_LocalScale: {x: .100000001, y: .100000001, z: .100000001}
   m_Children:
   - {fileID: 400030}
@@ -573,6 +609,30 @@ Transform:
   - {fileID: 400006}
   - {fileID: 400004}
   m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!4 &400036
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100036}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400012}
+  m_RootOrder: 0
+--- !u!4 &400038
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100038}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400018}
   m_RootOrder: 0
 --- !u!50 &5000000
 Rigidbody2D:
@@ -844,6 +904,36 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!50 &5000036
+Rigidbody2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100036}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 1
+  m_FixedAngle: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+--- !u!50 &5000038
+Rigidbody2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100038}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 1
+  m_FixedAngle: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
 --- !u!61 &6100000
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -1003,16 +1093,14 @@ MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100016}
+  m_GameObject: {fileID: 100018}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 837ed11adf4145248a0e9670a07ef73d, type: 3}
+  m_Script: {fileID: 11500000, guid: 7f1e0a69d5c674c52ae18af137d2cd0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LimbName: 
-  FlickCooldown: .5
-  ForceMagnitude: 10
-  jointpos: {x: 0, y: 0}
+  grabbed: {fileID: 0}
+  grip_button: Left Hand Grip
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1025,7 +1113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   grabbed: {fileID: 0}
-  grip_button: 
+  grip_button: Right Hand Grip
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1037,9 +1125,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcbcf3d60ac3a41eaabacc2b7b0808af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  horizontalInput: Right Hand X
-  verticalInput: Right Hand Y
-  radius: .200000003
+  horizontalInput: Left Foot X
+  verticalInput: Left Foot Y
+  radius: 2
+  cooldownTime: 3
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1051,9 +1140,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcbcf3d60ac3a41eaabacc2b7b0808af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  horizontalInput: Left Hand X
-  verticalInput: Left Hand Y
+  horizontalInput: Right Hand X
+  verticalInput: Right Hand Y
   radius: 5
+  cooldownTime: 3
 --- !u!114 &11400008
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1078,6 +1168,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   strength: 1
+--- !u!114 &11400012
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcbcf3d60ac3a41eaabacc2b7b0808af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  horizontalInput: Right Foot X
+  verticalInput: Right Foot Y
+  radius: 2
+  cooldownTime: 3
+--- !u!114 &11400014
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcbcf3d60ac3a41eaabacc2b7b0808af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  horizontalInput: Left Hand X
+  verticalInput: Left Hand Y
+  radius: 5
+  cooldownTime: 3
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -1416,7 +1536,7 @@ SpringJoint2D:
   m_GameObject: {fileID: 100012}
   m_Enabled: 1
   m_CollideConnected: 0
-  m_ConnectedRigidBody: {fileID: 5000000}
+  m_ConnectedRigidBody: {fileID: 5000036}
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_Distance: .00499999989
@@ -1430,7 +1550,7 @@ SpringJoint2D:
   m_GameObject: {fileID: 100018}
   m_Enabled: 1
   m_CollideConnected: 0
-  m_ConnectedRigidBody: {fileID: 5000002}
+  m_ConnectedRigidBody: {fileID: 5000038}
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_Distance: .00499999989
