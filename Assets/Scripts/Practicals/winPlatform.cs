@@ -9,6 +9,7 @@ public class winPlatform : powered {
 	public bool has_won;
 
 	public TimerControl timer_control;
+	public string nextScene;
 
 	// Use this for initialization
 	void Start () {
@@ -28,7 +29,13 @@ public class winPlatform : powered {
 				Instantiate( win_shower_whiskey, new Vector3( transform.position.x, 12, -0.003F ),  Quaternion.identity );
 				Instantiate( win_shower_banana, new Vector3( transform.position.x, 12, -0.003F ),  Quaternion.identity );
 				has_won = true;
+				StartCoroutine(NextLevel());
 			}
 		}
+	}
+
+	IEnumerator NextLevel() {
+		yield return new WaitForSeconds(4f);
+		Application.LoadLevel(nextScene);
 	}
 }
