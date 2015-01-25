@@ -9,6 +9,8 @@ public class GameMenu : MonoBehaviour {
 	public Transform the_menu;
 	public List<Transform> menu_buttons;
 
+	public string first_level_name;
+
 	// Use this for initialization
 	void Start () {
 		loadup = 0F;
@@ -48,6 +50,6 @@ public class GameMenu : MonoBehaviour {
 			press_a_indicator.color = new Color(1F, 1F, 1F, fade_factor);
 			yield return null;
 		}
-		Application.LoadLevel ("zaal_doodads");
+		Application.LoadLevel (first_level_name);
 	}
 }
