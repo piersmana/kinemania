@@ -55,7 +55,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.4000001, y: 2.20000005, z: 0}
+  m_LocalPosition: {x: 16.3700008, y: 5.55000019, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400000}
@@ -69,7 +69,7 @@ Rigidbody2D:
   m_GameObject: {fileID: 100000}
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: .0500000007
+  m_AngularDrag: .100000001
   m_GravityScale: 1
   m_FixedAngle: 0
   m_IsKinematic: 0
@@ -109,7 +109,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e1a31c3fc3d543d881f7d63f8f1144a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vine_length: 6
+  vine_length: 22
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -147,10 +147,10 @@ HingeJoint2D:
   m_Motor:
     m_MotorSpeed: 0
     m_MaximumMotorForce: 10000
-  m_UseLimits: 0
+  m_UseLimits: 1
   m_AngleLimits:
-    m_LowerAngle: 0
-    m_UpperAngle: 359
+    m_LowerAngle: -135
+    m_UpperAngle: 135
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

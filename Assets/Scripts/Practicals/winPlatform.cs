@@ -21,7 +21,7 @@ public class winPlatform : MonoBehaviour {
 	}
 
 	void OnTriggerStay2D( Collider2D other ) {
-		if ( !has_won && other.gameObject.name == "Body" ) {
+		if ( !has_won && other.gameObject.name == "player_monkey" ) {
 			if ( other.rigidbody2D.velocity.magnitude <= 0.3 ) {
 				timer_control.Stop ();
 				Instantiate( win_shower_whiskey, new Vector3( 0, 12, -0.003F ),  Quaternion.identity );
