@@ -1,0 +1,245 @@
+fileFormatVersion: 2
+guid: 1c188e2e63761448eb6e6bc174d87a4d
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: start_game_0
+    21300002: start_game_1
+    21300004: start_game_2
+    21300006: start_game_3
+    21300008: start_game_4
+    21300010: start_game_5
+    21300012: start_game_6
+    21300014: start_game_7
+    21300016: start_game_8
+    21300018: start_game_9
+    21300020: start_game_12
+    21300022: start_game_13
+    21300024: start_game_14
+    21300026: start_game_19
+    21300028: start_game_20
+    21300030: start_game_21
+    21300032: start_game_17
+    21300034: start_game_17
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: start_game_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1614
+        width: 532
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: start_game_1
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 1727
+        width: 236
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: start_game_2
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 1727
+        width: 214
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: start_game_3
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 1637
+        width: 678
+        height: 523
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: start_game_4
+      rect:
+        serializedVersion: 2
+        x: 2511
+        y: 1442
+        width: 855
+        height: 615
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: start_game_5
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1029
+        width: 495
+        height: 559
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: start_game_6
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 1258
+        width: 300
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: start_game_7
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 1245
+        width: 307
+        height: 396
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: start_game_8
+      rect:
+        serializedVersion: 2
+        x: 1686
+        y: 1176
+        width: 596
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: start_game_9
+      rect:
+        serializedVersion: 2
+        x: 2511
+        y: 799
+        width: 1042
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: start_game_12
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 647
+        width: 232
+        height: 484
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: start_game_13
+      rect:
+        serializedVersion: 2
+        x: 1146
+        y: 609
+        width: 251
+        height: 492
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: start_game_14
+      rect:
+        serializedVersion: 2
+        x: 1708
+        y: 699
+        width: 574
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: start_game_19
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 54
+        width: 593
+        height: 525
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: start_game_20
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 272
+        width: 490
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: start_game_21
+      rect:
+        serializedVersion: 2
+        x: 2406
+        y: 157
+        width: 1380
+        height: 441
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: start_game_17
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 694
+        width: 292
+        height: 206
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: start_game_17
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 110
+        width: 425
+        height: 517
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

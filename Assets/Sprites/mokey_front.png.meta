@@ -1,0 +1,212 @@
+fileFormatVersion: 2
+guid: acf2b3dc283fc49c8868c45303fbc4fb
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: mokey_front_0
+    21300002: mokey_front_1
+    21300004: mokey_front_2
+    21300006: mokey_front_3
+    21300008: mokey_front_4
+    21300010: mokey_front_5
+    21300012: mokey_front_6
+    21300014: mokey_front_7
+    21300016: mokey_front_8
+    21300018: mokey_front_9
+    21300020: mokey_front_10
+    21300022: mokey_front_11
+    21300024: mokey_front_12
+    21300026: mokey_front_13
+    21300028: mokey_front_14
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: mokey_front_0
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 3786
+        width: 1000
+        height: 929
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mokey_front_1
+      rect:
+        serializedVersion: 2
+        x: 1503
+        y: 3631
+        width: 971
+        height: 1209
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mokey_front_2
+      rect:
+        serializedVersion: 2
+        x: 2502
+        y: 3110
+        width: 437
+        height: 774
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mokey_front_3
+      rect:
+        serializedVersion: 2
+        x: 2629
+        y: 2209
+        width: 422
+        height: 718
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mokey_front_4
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 2969
+        width: 423
+        height: 788
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mokey_front_5
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 2096
+        width: 366
+        height: 1070
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mokey_front_6
+      rect:
+        serializedVersion: 2
+        x: 1981
+        y: 2110
+        width: 282
+        height: 1127
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mokey_front_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2251
+        width: 447
+        height: 662
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mokey_front_8
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 1603
+        width: 408
+        height: 620
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mokey_front_9
+      rect:
+        serializedVersion: 2
+        x: 2741
+        y: 1533
+        width: 352
+        height: 620
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mokey_front_10
+      rect:
+        serializedVersion: 2
+        x: 1981
+        y: 1035
+        width: 549
+        height: 915
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mokey_front_11
+      rect:
+        serializedVersion: 2
+        x: 1995
+        y: 486
+        width: 507
+        height: 493
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mokey_front_12
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 444
+        width: 577
+        height: 521
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mokey_front_13
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 993
+        width: 506
+        height: 873
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mokey_front_14
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 106
+        width: 591
+        height: 1478
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

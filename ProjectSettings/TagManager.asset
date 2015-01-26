@@ -4,6 +4,14 @@
 TagManager:
   tags:
   - 
+  - Enemy
+  - ExplosionFX
+  - Bullet
+  - ground
+  - Obstacle
+  - HealthBar
+  - BombPickup
+  - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
   Builtin Layer 2: Ignore Raycast
@@ -12,11 +20,11 @@ TagManager:
   Builtin Layer 5: UI
   Builtin Layer 6: 
   Builtin Layer 7: 
-  User Layer 8: monkey
-  User Layer 9: 
-  User Layer 10: 
-  User Layer 11: 
-  User Layer 12: 
+  User Layer 8: Solid
+  User Layer 9: Grabbable
+  User Layer 10: Limb
+  User Layer 11: Body
+  User Layer 12: Ground
   User Layer 13: 
   User Layer 14: 
   User Layer 15: 
@@ -37,6 +45,10 @@ TagManager:
   User Layer 30: 
   User Layer 31: 
   m_SortingLayers:
+  - name: background
+    userID: 3
+    uniqueID: 2863528417
+    locked: 0
   - name: Default
     userID: 0
     uniqueID: 0
@@ -44,4 +56,8 @@ TagManager:
   - name: monkey
     userID: 1
     uniqueID: 2625079513
+    locked: 0
+  - name: doodads
+    userID: 2
+    uniqueID: 660448575
     locked: 0
