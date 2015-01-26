@@ -59,7 +59,7 @@ MonoBehaviour:
   win_shower_banana: {fileID: 400000, guid: 326e3bce41bff41348235352c58f4758, type: 2}
   has_won: 0
   timer_control: {fileID: 0}
-  nextScene: cold_open
+  nextScene: start_screen
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
