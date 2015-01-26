@@ -20,6 +20,10 @@ public class GameManager : MonoBehaviour {
 			player.transform.position = new Vector3(0,0,0);
 		}
 		rigidbody2D.velocity = new Vector2( (player.transform.position.x - transform.position.x) , 0F);
+
+		if (Input.GetKeyDown(KeyCode.Escape)) {
+			Application.Quit();
+		}
 	}
 
 	void youWin() {
