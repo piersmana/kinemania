@@ -16,7 +16,14 @@ public class GameManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		rigidbody2D.velocity = new Vector2( (player.transform.position.x - transform.position.x) / 4 , 0F);
+		if (player.transform.position.y < -20) {
+			player.transform.position = new Vector3(0,0,0);
+		}
+		rigidbody2D.velocity = new Vector2( (player.transform.position.x - transform.position.x) , 0F);
+
+		if (Input.GetKeyDown(KeyCode.Escape)) {
+			Application.Quit();
+		}
 	}
 
 	void youWin() {
